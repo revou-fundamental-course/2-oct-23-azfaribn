@@ -1,25 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Kalkulator Suhu</title>
 </head>
+
 <body>
     <header>
         <h1>Kalkulator Suhu</h1>
     </header>
     <main>
         <section class="input-section">
-        <label for="input-field">Celcius</label>
-        <input id="input-field" type="number" placeholder="0">
-        <div id="input-button">
-            <button>Konversi</button>
-            <button>Reset</button>
-            <button>Reverse</button>
-        </div>
+            <label for="celsiusInput">Celsius</label>
+            <input id="celsiusInput" type="number" placeholder="Enter Celsius Temperature" />
+            <div id="input-button">
+                <button onclick="convertToCelsius()">Konversi</button>
+                <button onclick="reset()">Reset</button>
+                <button onclick="convertToFahrenheit()">Reverse</button>
+            </div>
+        </section>
+        <section class="input-section">
+            <label for="fahrenheitInput">Fahrenheit</label>
+            <input id="fahrenheitInput" type="number" placeholder="0" />
         </section>
     </main>
+    <!-- Include the script.js file using script tag -->
+    <script src="js/script.js"></script>
 </body>
+
 </html>
